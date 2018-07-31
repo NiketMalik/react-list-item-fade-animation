@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  border: 1px solid #888;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.example2-appear {
+  opacity: 0.01;
+}
+
+.example2-appear.example2-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.example-appear {
+  opacity: 0.01;
+  transform: translateY(100%);
+}
+
+.example-appear.example-appear-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
